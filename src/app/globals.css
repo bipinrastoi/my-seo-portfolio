@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #F9FAFB;       /* Soft Off-White Background */
+    --card-surface: #FFFFFF;  /* Pure White Surface Cards */
+    --text-primary: #111827;  /* High Contrast Deep Slate Text */
+    --text-muted: #6B7280;    /* Muted Secondary Gray */
+    --accent-indigo: #4F46E5; /* Primary Action & Accent */
+    --accent-emerald: #059669;/* Metrics & SEO Accent */
+    --border-subtle: #E5E7EB; /* Thin Card Borders */
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+  }
+}
