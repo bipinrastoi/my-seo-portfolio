@@ -71,14 +71,14 @@ export const customComponents: PortableTextComponents = {
       );
     },
   },
-  types: {
-    code: (props) => (
-      <div className="my-8 rounded-xl bg-[#1E1E1E] text-neutral-100 p-4 font-mono text-sm overflow-x-auto border border-neutral-800 shadow-md">
-        <pre>
-          <code>{props.value?.code || props.children}</code>
-        </pre>
-      </div>
-    ),
+ types: {
+      code: (props: any) => (
+        <div className="my-8 rounded-xl bg-[#1E1E1E] text-neutral-100 p-4 font-mono text-sm overflow-x-auto border border-neutral-800 shadow-md">
+          <pre>
+            <code>{props.value?.code || props.children}</code>
+          </pre>
+        </div>
+      ),
     image: ({ value }: any) => {
       if (!value?.asset) return null;
       const imageUrl = urlFor(value)?.url();
